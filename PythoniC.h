@@ -4,17 +4,24 @@
 #include <cstdlib>
 #include <stdbool.h>
 #include <string.h>
-// ----------
+// ---------------------------------
+
 #define pass (void)0
+/* uncomment the below '#define' statement to use 'pass' without a semi-colon ending instead of 'pass;'. 'pass' is more Pythonic
+ but violates C/C++ syntax. So it is being left as an optional feature. It is best to not use unwanted semi-colons*/
+#ifndef pass
+    #define pass (void)0;
+#endif
+# --
 #define True true
 #define False false
 #define print printf
 #define elif else if
 #define len(x) sizeof(x)/sizeof(x[0])
-/*
+/* ----------------------------------
 It is advised to leave any comment directions to prevent small issues and to allow for easier debugging once directions are reread.
 */
-
+// -------
 //Python 2 Style Print Statement:
 // Delete the Below Multi-Line comment '/*' and the next one signified with asterisks to enable.
 //DON'T FORGET TO COMMENT OUT THE ABOVE Python 3 PRINT #DEFINE MACRO!!!
