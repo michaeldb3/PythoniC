@@ -6,9 +6,10 @@
 #include <string.h>
 // ---------------------------------
 
-#define pass (void)0
-/* uncomment the below '#define' statement to use 'pass' without a semi-colon ending instead of 'pass;'. 'pass' is more Pythonic
- but violates C/C++ syntax. So it is being left as an optional feature. It is best to not use unwanted semi-colons*/
+//#define pass (void)0;
+/* uncomment the above '#define' statement to use 'pass' without a trailing semi-colon. 'pass' (in lieu of 'pass;') is more Pythonic
+ but violates C/C++ syntax. So it is being left as an optional feature. It is best to not use unwanted semi-colons but using 'pass;'
+ with this feature enabled will pre-compile to 'pass;;' but still work.*/
 #ifndef pass
     #define pass (void)0;
 #endif
