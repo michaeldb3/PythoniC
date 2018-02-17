@@ -11,7 +11,7 @@
  but violates C/C++ syntax. So it is being left as an optional feature. It is best to not use unwanted semi-colons but using 'pass;'
  with this feature enabled will pre-compile to 'pass;;' but still work.*/
 #ifndef pass
-    #define pass (void)0;
+    #define pass (void)0
 #endif
 # --
 #define True true
